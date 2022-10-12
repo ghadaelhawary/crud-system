@@ -1,0 +1,75 @@
+<html>
+
+<head>
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+<div class=" w-50 m-auto p-5 shadow-lg">
+    
+        <h1>CRUD SYSTEM</h1> 
+    
+        <label >ProductName:</label>
+        <input type="text" class="form-control" id="ProductName">
+        
+        <label>ProductCategory:</label>
+        <input type="text" class="form-control" id="ProductCategory">
+    
+        <label>ProductPrice:</label>
+        <input type="text" class="form-control" id="ProductPrice">
+    
+        <label>ProductDescription:</label>
+        <textarea class="form-control mb-4" id="ProductDescription"></textarea>
+    
+        <button onclick=" createProduct(); " id="addProduct" class="btn btn-outline-success">add_product</button>
+
+
+
+        <button onclick="clearForm()" class="btn btn-outline-success">add clear</button>
+    
+    
+    
+    
+    
+    
+</div>
+
+
+<input type="text" placeholder="search...."  class="form-control mt-4 w-25 m-auto" id="search" onkeyup="searchFun()">
+
+
+
+<table class="table w-75 m-auto mt-5 text-center table-striped">
+  <thead>
+    <th>index</th>
+    <th>name</th>
+    <th>category</th>
+    <th>price</th>
+    <th>description</th>
+    <th>update</th>
+    <th>delete</th>
+    
+  </thead>
+  <tbody id="tablebody">
+
+
+   
+
+
+
+
+
+  </tbody>
+</table>
+
+
+
+    <script src="js/mine.js"></script>
+</body>
+
+</html>
